@@ -15,6 +15,22 @@ body {
 	color: var(--secondary-text-color);
 	background-color: var(--primery-white-color);
 }
+*::after,
+::before {
+	box-sizing: border-box;
+}
+/*reset*/
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 /*Header*/
 .visually-hidden {
 	position: absolute;
@@ -37,6 +53,13 @@ body {
 }
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .logo {
 	font-family: "Raleway", sans-serif;
