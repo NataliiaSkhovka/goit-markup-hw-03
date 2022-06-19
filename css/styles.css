@@ -143,12 +143,23 @@ body {
 	color: var(--secondary-text-color);
 	background-color: #f5f4fa;
 	border: none;
+	cursor: pointer;
 }
 .btn-port:hover,
 .btn-port:focus {
 	color: var(--primery-white-color);
 	background-color: var(--accent-color);
-	cursor: pointer;
+}
+.btn-port.active {
+	color: var(--primery-white-color);
+	background-color: var(--accent-color);
+}
+.btn-list {
+	display: flex;
+	align-items: center;
+}
+.btn-item:not(:last-child) {
+	margin-right: 8px;
 }
 .bond-port {
 	background-color: var(--primery-white-color);
