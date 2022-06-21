@@ -62,6 +62,7 @@ img {
 .header-conteiner {
 	display: flex;
 	align-items: center;
+	border-bottom: #757575;
 }
 .link {
 	text-decoration: none;
@@ -192,9 +193,10 @@ img {
 .team-section {
 	background-color: #f5f4fa;
 }
-.team-item {
+.team-item-section {
 	display: flex;
-	margin-left: 30px;
+}
+.team-item:not(:last-child) {
 	margin-right: 30px;
 }
 .name-team {
