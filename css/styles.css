@@ -196,6 +196,9 @@ img {
 .team-item-section {
 	display: flex;
 }
+.team-item {
+	border: #757575;
+}
 .team-item:not(:last-child) {
 	margin-right: 30px;
 }
