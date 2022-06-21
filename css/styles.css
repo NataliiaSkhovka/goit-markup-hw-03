@@ -130,13 +130,13 @@ img {
 	padding: 200px 452px 280px 452px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 .main-title {
 	font-weight: 900;
 	font-size: 44px;
 	width: 696px;
 	line-height: 1.36;
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primery-white-color);
@@ -153,7 +153,6 @@ img {
 	line-height: 1.875;
 	letter-spacing: 0.06em;
 	border: none;
-	display: inline-flex;
 	align-items: center;
 	border-radius: 4px;
 }
