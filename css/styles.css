@@ -15,9 +15,13 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-bgr-color);
 }
-*::after,
-::before {
+html {
   box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 /*reset*/
 h1,
@@ -58,6 +62,7 @@ img {
 }
 .header {
   border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
 }
 .header .container {
   display: flex;
@@ -119,6 +124,8 @@ img {
 /*Main page*/
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  padding: 200px 0;
 }
 .main-title {
   font-weight: 900;
@@ -134,16 +141,16 @@ img {
   margin-left: auto;
 }
 .main-btn {
+  padding: 10px 32px;
   color: var(--primery-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -156,7 +163,7 @@ img {
 }
 .main-benefits {
   display: flex;
-  padding-top: 94px;
+  align-items: center;
 }
 .point-benefits {
   font-size: 14px;
@@ -165,12 +172,18 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
+.benefits-item {
+  width: 270px;
+}
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
 .text-benefits {
   line-height: 1.71;
   color: var(--main-text-color);
+}
+.about {
+  padding-top: 0;
 }
 .team-section {
   background-color: #f5f4fa;
@@ -179,9 +192,10 @@ img {
   display: flex;
 }
 .team-item {
-  border: 1px solid #eeeeee;
-  margin: 15px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -190,7 +204,6 @@ img {
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -198,15 +211,10 @@ img {
   font-size: 16px;
   line-height: 1.2;
   color: var(--main-text-color);
-  margin-bottom: 30px;
   text-align: center;
 }
-.img {
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 262px;
-  background: url(portfolio1.jpg);
+.team-thumb {
+  padding: 30px 0;
 }
 .section-title {
   font-size: 36px;
@@ -217,7 +225,7 @@ img {
 .img-section-title {
   display: flex;
 }
-.img-title-item {
+.img-title-item:not(:last-child) {
   margin-right: 30px;
 }
 /*Portfolio*/
@@ -247,8 +255,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 56px;
+  margin-bottom: 50px;
 }
 .btn-item:not(:last-child) {
   margin-right: 8px;
@@ -256,14 +263,15 @@ img {
 .port-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: -15px;
-  padding-bottom: 94px;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
-.bond-port {
+.cards-port {
   background-color: var(--primery-white-color);
   border: 1px solid #eeeeee;
-  margin: 15px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 .title-port {
@@ -271,23 +279,20 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 .text-portfolio {
   font-size: 16px;
   line-height: 1.9;
   color: var(--main-text-color);
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+}
+.cards-thumb {
+  padding: 20px 10px 20px 24px;
 }
 /*Footer*/
 .footer {
   background-color: #2f303a;
-}
-.footer-conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
