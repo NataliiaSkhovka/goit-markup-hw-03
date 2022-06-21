@@ -197,7 +197,8 @@ img {
 	display: flex;
 }
 .team-item {
-	border: #757575;
+	border: 1px solid #eeeeee;
+	margin: 15px;
 }
 .team-item:not(:last-child) {
 	margin-right: 30px;
