@@ -62,7 +62,7 @@ img {
 .header-conteiner {
 	display: flex;
 	align-items: center;
-	border-bottom: #757575;
+	border-bottom: 1px solid #eeeeee;
 }
 .link {
 	text-decoration: none;
@@ -166,14 +166,11 @@ img {
 .about-benefits {
 	width: 400px;
 }
-.conteiner-main-benefits {
-	margin-left: 30px;
-	margin-right: 30px;
-}
 .main-benefits {
 	display: flex;
-	flex-shrink: 0;
 	padding-top: 94px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 .point-benefits {
 	font-size: 14px;
@@ -183,7 +180,6 @@ img {
 	margin-bottom: 10px;
 }
 .benefits-item:not(:last-child) {
-	width: 270px;
 	margin-right: 30px;
 }
 .text-benefits {
