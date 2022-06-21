@@ -190,6 +190,7 @@ img {
 .team-item {
 	border: 1px solid #eeeeee;
 	margin: 15px;
+	background-color: #ffffff;
 }
 .team-item:not(:last-child) {
 	margin-right: 30px;
