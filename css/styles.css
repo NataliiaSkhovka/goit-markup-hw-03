@@ -13,7 +13,7 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--secondary-text-color);
-  background-color: var(--accent-bgr-color);
+  background-color: var(--primery-white-color);
 }
 html {
   box-sizing: border-box;
